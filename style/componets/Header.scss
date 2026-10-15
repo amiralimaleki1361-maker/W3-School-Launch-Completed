@@ -1,0 +1,127 @@
+@import "../base/vars";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: appies;
+}
+
+.app {
+    header {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.carousel {
+    item {
+        position: relative;
+    }
+}
+
+.app {
+    image {
+        display: block;
+        width: 100%;
+        min-width: 500px;
+        height: auto;
+    }
+}
+
+.slide {
+    text {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        width: 35%;
+        padding: 20px;
+        background-color: $main-color;
+        color: $text-color;
+        border-radius: $border-radius;
+
+        h1 {
+            font-size: $title-size;
+            font-weight: bold;
+        }
+
+        hr {
+            border: 1px solid $text-color;
+        }
+    }
+}
+
+.download-btn {
+
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    padding: 12px 20px;
+    color: $text-color;
+    background-color: $green-color;
+    border-radius: 5px;
+    ;
+
+    .btn:hover {
+        color: $text-color;
+        background-color: $green-color;
+        opacity: 1;
+    }
+}
+
+.mobile-download {
+    display: none;
+}
+
+.tour-btn {
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    padding: 12px 20px;
+    color: $text-color;
+    background-color: $main-color;
+    border-radius: 5px;
+
+    .btn:hover {
+        color: $main-color;
+        background-color: $green-color;
+    }
+}
+
+@media (max-width:600px) {
+    .mobile-download {
+        top: 25px;
+        position: sticky;
+        background-color: $green-color;
+        color: $text-color;
+        display: block;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .app-image {
+        width: 100%;
+        min-width: 500px;
+    }
+
+    .slide-text,
+    .desktop-download {
+        display: none;
+    }
+
+    .tour-btn {
+        background-color: $main-color;
+        color: $text-color;
+        position: static;
+        display: block;
+        width: 100%;
+        transform: none;
+        border-radius: 0;
+    }
+}

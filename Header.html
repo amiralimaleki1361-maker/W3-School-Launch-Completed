@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Launch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css
+">
+    <link rel="stylesheet" href="Style/componets/Header.css">
+</head>
+
+<body>
+
+    <header class="app-header">
+
+        <button class="btn download-btn mobile-download" data-bs-toggle="modal" data-bs-target="#downloadModal">
+            <i class="fa-solid fa-download"></i> Download
+        </button>
+
+        <div id="appCarousel" class="carousel slide">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="https://www.w3schools.com/w3images/app4.jpg" class="app-image" alt="App">
+
+                    <div class="slide-text">
+                        <h1>Take photos with our app</h1>
+                        <hr>
+                        <p>Super simple installation: free of charge</p>
+
+                        <button class="btn download-btn desktop-download p-3" data-bs-toggle="modal"
+                            data-bs-target="#downloadModal">
+                            <i class="fa-solid fa-download"></i> Download
+                            <i class="fa-brands fa-android"></i> Android
+                            <i class="fa-brands fa-apple"></i> Apple
+                            <i class="fa-brands fa-windows"></i>Windows
+                        </button>
+                    </div>
+                    <button class="btn tour-btn" type="button" data-bs-target="#appCarousel" data-bs-slide="next">
+                        Take Tour <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://www.w3schools.com/w3images/app2.jpg" class="app-image" alt="App">
+
+                    <div class="slide-text">
+                        <h1><b>CLICK!</b> Fast and Easy</h1>
+                        <hr>
+                        <p>Choose from thousands of features</p>
+
+                        <button class="btn download-btn desktop-download p-3" data-bs-toggle="modal"
+                            data-bs-target="#downloadModal">
+                            <i class="fa-solid fa-download"></i> Download
+                            <i class="fa-brands fa-android"></i> Android
+                            <i class="fa-brands fa-apple"></i> Apple
+                            <i class="fa-brands fa-windows"></i>Windows
+                        </button>
+                    </div>
+                    <button class="btn tour-btn" type="button" data-bs-target="#appCarousel" data-bs-slide="next">
+                        Take Tour <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://www.w3schools.com/w3images/app3.jpg" class="app-image" alt="App">
+
+                    <div class="slide-text">
+                        <h1>Smart Design</h1>
+                        <hr>
+                        <p>Customize photos as you go</p>
+
+                        <button class="btn download-btn desktop-download p-3" data-bs-toggle="modal"
+                            data-bs-target="#downloadModal">
+                            <i class="fa-solid fa-download"></i> Download
+                            <i class="fa-brands fa-android"></i> Android
+                            <i class="fa-brands fa-apple"></i> Apple
+                            <i class="fa-brands fa-windows"></i>Windows
+                        </button>
+                    </div>
+                    <button class="btn tour-btn" type="button" data-bs-target="#appCarousel" data-bs-slide="next">
+                        Take Tour <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+
+        </div>
+    </header>
+
+    <div class="modal fade" id="downloadModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Download App</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    This is a demo download button.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

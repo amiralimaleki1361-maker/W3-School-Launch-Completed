@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: appies;
+}
+
+.app header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel item {
+  position: relative;
+}
+
+.app image {
+  display: block;
+  width: 100%;
+  min-width: 500px;
+  height: auto;
+}
+
+.slide text {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 35%;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+}
+.slide text h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.slide text hr {
+  border: 1px solid #fff;
+}
+
+.download-btn {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  padding: 12px 20px;
+  color: #fff;
+  background-color: #106813;
+  border-radius: 5px;
+}
+.download-btn .btn:hover {
+  color: #fff;
+  background-color: #106813;
+  opacity: 1;
+}
+
+.mobile-download {
+  display: none;
+}
+
+.tour-btn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  padding: 12px 20px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+}
+.tour-btn .btn:hover {
+  color: #000;
+  background-color: #106813;
+}
+
+@media (max-width: 600px) {
+  .mobile-download {
+    top: 25px;
+    position: sticky;
+    background-color: #106813;
+    color: #fff;
+    display: block;
+    width: 100%;
+    border-radius: 0;
+  }
+  .app-image {
+    width: 100%;
+    min-width: 500px;
+  }
+  .slide-text,
+  .desktop-download {
+    display: none;
+  }
+  .tour-btn {
+    background-color: #000;
+    color: #fff;
+    position: static;
+    display: block;
+    width: 100%;
+    transform: none;
+    border-radius: 0;
+  }
+}/*# sourceMappingURL=Header.css.map */
