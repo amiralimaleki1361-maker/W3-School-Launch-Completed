@@ -1,11 +1,5 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: appies;
+  font-family: "Poppins", sans-serif;
 }
 
 .app header {
@@ -29,12 +23,15 @@ body {
   position: absolute;
   top: 50%;
   left: 5%;
+  right: auto;
   transform: translateY(-50%);
   width: 35%;
   padding: 20px;
+  text-align: left;
   background-color: #000;
   color: #fff;
   border-radius: 8px;
+  z-index: 10;
 }
 .slide text h1 {
   font-size: 28px;
@@ -53,10 +50,9 @@ body {
   background-color: #106813;
   border-radius: 5px;
 }
-.download-btn .btn:hover {
-  color: #fff;
-  background-color: #106813;
-  opacity: 1;
+.download-btn:hover {
+  color: #000;
+  background-color: #ccc;
 }
 
 .mobile-download {
@@ -72,14 +68,20 @@ body {
   background-color: #000;
   border-radius: 5px;
 }
-.tour-btn .btn:hover {
+.tour-btn:hover {
   color: #000;
-  background-color: #106813;
+  background-color: #ccc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 600px) {
   .mobile-download {
-    top: 25px;
+    top: 5px;
     position: sticky;
     background-color: #106813;
     color: #fff;
@@ -104,4 +106,4 @@ body {
     transform: none;
     border-radius: 0;
   }
-}/*# sourceMappingURL=Header.css.map */
+}/*# sourceMappingURL=style.css.map */

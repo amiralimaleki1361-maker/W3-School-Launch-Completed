@@ -1,0 +1,70 @@
+@import "../base/vars";
+@import "../base/Mixin";
+
+
+
+body {
+    font-family: $font-family;
+}
+
+.app {
+    header {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.carousel {
+    item {
+        position: relative;
+    }
+}
+
+.app {
+    image {
+        display: block;
+        width: 100%;
+        min-width: 500px;
+        height: auto;
+    }
+}
+
+.slide {
+    text {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        right: auto;
+        transform: translateY(-50%);
+        width: 35%;
+        padding: 20px;
+        text-align: left;
+        background-color: $main-color;
+        color: $text-color;
+        border-radius: $border-radius;
+        z-index: 10;
+
+        h1 {
+            font-size: $title-size;
+            font-weight: bold;
+        }
+
+        hr {
+            border: 1px solid $text-color;
+        }
+    }
+}
+
+.download-btn {
+     @include button(download);
+}
+
+.mobile-download {
+    display: none;
+}
+
+.tour-btn {
+ @include button(tour);
+
+}

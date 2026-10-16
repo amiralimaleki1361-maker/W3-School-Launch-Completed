@@ -1,0 +1,34 @@
+@import "_vars";
+
+@mixin button($type) {
+    @if $type==download {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        padding: 12px 20px;
+        color: $text-color;
+        background-color: $green-color;
+        border-radius: 5px;
+
+        &:hover {
+            color: $main-color;
+            background-color: $btn-hover;
+        }
+    }
+
+    @else if $type==tour {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        padding: 12px 20px;
+        color: $text-color;
+        background-color: $main-color;
+        border-radius: 5px;
+
+        &:hover {
+            color:  $main-color;
+            background-color: $btn-hover;
+        }
+    }
+
+}
